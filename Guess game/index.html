@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body id="body" class="p-12 max-h-[100vh]">
+    <div
+      class="bg-slate-600 h-[93vh] w-auto flex flex-col justify-center items-center"
+    >
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-white font-bold text-xl">Guess the number</h1>
+        <form id="form_input">
+          <input
+            type="text"
+            id="input_element"
+            placeholder="Enter Your Number"
+          />
+        </form>
+        <button id="submitBtn" class="bg-black text-white p-2 rounded-xl">
+          Submit Guess
+        </button>
+
+        <div id="resultParas">
+          <p class="text-white">
+            Previous guesses : <span id="previousGuesses"></span>
+          </p>
+          <p class="text-white">
+            Guesses Remaining : <span id="rem_Guesses">3</span>
+          </p>
+          <p class="text-white">
+            You have 3 chances and have to guess numbers between 1 to 10
+          </p>
+          <p class="text-2xl" id="outcomeMessage"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
